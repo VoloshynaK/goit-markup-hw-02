@@ -10,10 +10,11 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
     background-color: var(--primary-bckg-white-color);
     color: var(--primary-title-color);
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.02em;
 }
 
 
@@ -27,6 +28,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--primary-title-color);
+    cursor: pointer;
 }
 .logo-footer{
     color: var(--section-bckg-color);
@@ -43,9 +45,14 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+.site-nav .link.current {
+    color: var(--accent-focus-color);
 }
 
 .site-nav .link:hover,
@@ -58,6 +65,7 @@ body {
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--primary-text-color);
 }
@@ -77,11 +85,13 @@ body {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
     color: var(--primary-bckg-white-color);
 }
 .hero-button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -89,6 +99,7 @@ body {
     letter-spacing: 0.04em;
     color: var(--primary-bckg-white-color);
     background-color: var(--accent-color);
+    cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -97,10 +108,24 @@ body {
 
 
 /* sections */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
     color: var(--primary-title-color);
@@ -113,13 +138,14 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--primary-title-color);
 }
-.advantage-desc,
-.team-desc {
+.advantage-descr,
+.team-descr {
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
 .team-list {
@@ -135,10 +161,10 @@ body {
     text-align: left;
     background-color: var(--primary-title-color);
 }
-.footer-desc {
+.footer-descr {
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--filter-bckg-color);
 }
 
@@ -146,6 +172,7 @@ body {
 /* portfolio page */
 
 .filter-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -153,6 +180,7 @@ body {
     letter-spacing: 0.04em;
     color: var(--accent-color);
     background-color: var(--section-bckg-color);
+    cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus,
@@ -165,11 +193,12 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--primary-title-color);
 }
-.card-desc {
+.card-descr {
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
